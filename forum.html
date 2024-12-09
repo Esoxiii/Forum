@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="login.html">Zaloguj się</a></li>
+                <li><a href="register.html">Zarejestruj się</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="background-toggle">
+        <button onclick="toggleBackground()">Zmień tło</button>
+    </div>
+
+    <div id="posts-container">
+        <h2>Posty na forum</h2>
+
+        <div id="post-creation">
+            <textarea id="postContent" placeholder="Twój post..."></textarea>
+            <div>
+                <label for="category">Wybierz kategorię:</label>
+                <select id="category">
+                    <option value="cheaty">Cheaty</option>
+                    <option value="ogłoszenia">Ogłoszenia</option>
+                    <option value="sprzedam">Sprzedam</option>
+                    <option value="kupię">Kupię</option>
+                    <option value="cracks">Cracks</option>
+                    <option value="leaks">Leaks</option>
+                    <option value="nsfw">NSFW</option>
+                    <option value="poradniki">Poradniki</option>
+                    <option value="kodowanie">Kodowanie</option>
+                    <option value="konfiguracja">Konfiguracja</option>
+                </select>
+            </div>
+            <button onclick="createPost()">Stwórz post</button>
+        </div>
+
+        <div id="post-list">
+            <!-- Posty pojawią się tutaj -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Twoja Strona</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

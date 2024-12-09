@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gra Papier, Kamień, Nożyce</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Sklep</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="game.html">Gra</a></li>
+      </ul>
+    </nav>
+    <h1>Gra Papier, Kamień, Nożyce</h1>
+    <p>Wybierz opcję i obstawiaj Essoxiii Coins!</p>
+    <div class="wallet">
+      <p>Twoje saldo: <span id="balance">100 Essoxiii Coins</span></p>
+    </div>
+  </header>
+
+  <div id="game">
+    <button onclick="playGame('rock')">Kamień</button>
+    <button onclick="playGame('paper')">Papier</button>
+    <button onclick="playGame('scissors')">Nożyce</button>
+
+    <div id="game-result">
+      <p id="result"></p>
+    </div>
+
+    <div id="bet">
+      <label for="bet-amount">Ile Essoxiii Coins chcesz obstawić:</label>
+      <input type="number" id="bet-amount" value="25">
+    </div>
+  </div>
+
+  <footer>
+    <p>Gra Esoxiii &copy; 2024</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Strona Główna</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="login.html">Zaloguj się</a></li>
+                <li><a href="register.html">Zarejestruj się</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="background-toggle">
+        <button onclick="toggleBackground()">Zmień tło</button>
+    </div>
+
+    <div id="game">
+        <h2>Gra</h2>
+        <button onclick="startGame()">Rozpocznij grę</button>
+    </div>
+
+    <div id="user-info">
+        <h3>Użytkownik: <span id="username-display"></span></h3>
+        <button onclick="logout()">Wyloguj się</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Twoja Strona</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
